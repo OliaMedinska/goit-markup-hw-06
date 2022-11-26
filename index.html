@@ -402,6 +402,25 @@
                     </a>
                 </ul>
                 </li>
+                <li class="footer-position-part">
+                    <p class="footer-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p> 
+
+                    <form>
+                        <div class="form-control">
+                        <label for="label-name" class="form-label-footer"></label>
+                            <input id="label-name" type="text" class="form-input-footer">
+                            <span class="form-text-footer">E-mail</span>
+                        </div>
+                    </form>
+
+                           <button type="button" class="button-send-footer"><div>
+                            Підписатися</div>
+                            <svg width="20" height="20" class="cards-icon icon-footer ">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+
+                </li>
                 </ul>
      </div>
     </footer>
@@ -443,13 +462,21 @@
          </svg>
         </div>
 
-        <label for="label-name" class="form-label">Коментар</label>
-        <div class="form-control">
-            <input id="label-name" type="text" class="form-input-comment">
-         <span class="form-comment">Введіть текст</span>
-        </div>
+    <label class="form-label" for="person-comment">Коментар</label>
+    <textarea
+       class="form-textarea"
+       id="person-comment"
+       name="person-comment"
+       placeholder="Введіть текст" 
+       ></textarea>
+
+       <input id="terms-checkox" type="checkbox" name="terms-checkbox"/>
+       <label for="terms-checkbox" class="terms-text">
+        Погоджуюся з розсилкою та приймаю
+        <a href="#" class="terms-link">Умови договору</a>
+       </label>
+       <button type="button" class="button-send"><div>Відправити</div></button>
       </form>
-      <button type="button" class="button-send"><div>Відправити</div></button>
       </div>
     </div>
 </div>
