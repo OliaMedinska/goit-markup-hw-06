@@ -36,9 +36,6 @@
                                 <use href="./images/icons.svg#icon-envelopehover"></use>
                             </svg>info@devstudio.com</a>
                     </li>
-                    <a href="tel:+380961111111" class="nav-img contact-header">
-                    
-                    </a>
                     <li class="item-contact">
                         <a href="tel:+380961111111" class="contact contact-header">
                             <svg width="10" height="16" class="nav-icon">
@@ -403,10 +400,11 @@
                 </ul>
                 </li>
                 <li class="footer-position-part">
-                    <p class="footer-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p> 
+                        <p class="footer-text-second">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p> 
 
                     <form>
-                        <div class="form-control">
+                        <div class="footer-position-form">
+                        <div class="form-control-footer">
                         <label for="label-name" class="form-label-footer"></label>
                             <input id="label-name" type="text" class="form-input-footer">
                             <span class="form-text-footer">E-mail</span>
@@ -419,6 +417,8 @@
                                 <use href="./images/icons.svg#icon-icon-send"></use>
                             </svg>
                         </button>
+                    </div>
+                    </div>
 
                 </li>
                 </ul>
@@ -470,11 +470,13 @@
        placeholder="Введіть текст" 
        ></textarea>
 
-       <input id="terms-checkox" type="checkbox" name="terms-checkbox"/>
-       <label for="terms-checkbox" class="terms-text">
-        Погоджуюся з розсилкою та приймаю
-        <a href="#" class="terms-link">Умови договору</a>
-       </label>
+      <div class="terms-section">
+        <input id="terms-checkox" type="checkbox" name="terms-checkbox" class="visually-hidden checkbox-input"/>
+        <label for="terms-checkbox" class="terms-text checkbox-label">
+         Погоджуюся з розсилкою та приймаю
+         <a href="#" class="terms-link">Умови договору</a>
+        </label>
+      </div>
        <button type="button" class="button-send"><div>Відправити</div></button>
       </form>
       </div>
@@ -484,4 +486,4 @@
      <script src="./modal.js"></script>
     </body>
     
-    </html>
+    </html> 
