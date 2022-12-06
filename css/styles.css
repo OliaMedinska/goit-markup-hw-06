@@ -1174,6 +1174,7 @@ border-color: var(--accent-text-color);
     border: 1px solid var(--input-border);
     border-radius: 4px;
     outline:none;
+    resize:none;
 
     font-size: 12px;
     line-height: 1.16;
@@ -1186,114 +1187,104 @@ border-color: var(--accent-text-color);
 
 
     /*checkbox*/
-.terms-section{
-    margin-left: 18px;
-}
-.terms-checkbox{
-    margin-bottom: 30px;
+    .terms-section{
+        margin-left: 18px;
+    }
+    .terms-checkbox{
+        margin-bottom: 30px;
+    
+    }
+    .terms-text{
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    
+        color:var(--primary-text-color);
+    }
+    .terms-link{
+        color: var(--accent-text-color);
+    }
+    
+    .checkbox-input{
+        appearance: none;
+    }
+    .checkbox-label{
+        position: relative;
+        padding-left: 23px;
+    }
+    
+    .checkbox-label ::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        border: 2px solid;
+        border-color: var(--title-text-color);
+        background-color: var(--second-text-color);
+    }
+    
 
-}
-.terms-text{
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color:var(--primary-text-color);
-}
-.terms-link{
-    color: var(--accent-text-color);
-}
-
-.checkbox-input{
-    appearance: none;
-}
-.checkbox-label{
-    position: relative;
-    padding-left: 23px;
-}
-
-.checkbox-label ::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1px solid;
-    border-color: var(--accent-text-color);
-    background-color: var(--second-text-color);
-}
-
-.checkbox-label ::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    background-image: url("./vector-icon.svg");
-    background-color: var(--accent-text-color);
-    opacity:0;
-}
-
-.checkbox-input:checked > .checkbox-label::after{
-    opacity: 1;
-}
-
-/*button-send*/
-.button-send{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-    color: var(--second-text-color);
-    background-color: var(--accent-text-color);
-
-    width: 200px;
-    height: 50px;
-    margin: 0;
-    margin-bottom: 40px;
-    left: 164px;
-    right: 164px;
-    bottom: 26px;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-    min-width: 216px;
-    height: 50px;
-    margin-bottom: 0px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-send:hover,
-.button-send:focus{
-    color: var(--accent-text-color);
-    background-color: var(--second-text-color);
-    border-color: var(--accent-text-color);
-}
-
-/* .button-send-text{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--second-text-color);
-}
-
-.button-send:hover,
-.button-send:focus{
-
-} */
+    .checkbox-label ::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        background-image: url("./vector-icon.svg");
+        background-color: var(--accent-text-color);
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .checkbox-input:checked + .checkbox-modal{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    /*button-send*/
+    .button-send{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+        color: var(--second-text-color);
+        background-color: var(--accent-text-color);
+    
+        width: 200px;
+        height: 50px;
+        margin: 0;
+        margin-bottom: 40px;
+        left: 164px;
+        right: 164px;
+        bottom: 26px;
+    
+        border: 1px solid transparent;
+        border-radius: 4px;
+        min-width: 216px;
+        height: 50px;
+        margin-bottom: 0px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* .button-send:hover,
+    .button-send:focus{
+        color: var(--accent-text-color);
+        background-color: var(--second-text-color);
+        border-color: var(--accent-text-color);
+    } */
