@@ -471,13 +471,21 @@
        ></textarea>
 
 <!--checkbox for modal window-->
-      <div class="terms-section">
-        <input id="terms-checkox" type="checkbox" name="terms-checkbox" class="visually-hidden checkbox-input"/>
+      <!-- <div class="terms-section">
+        <input id="terms-checkox" type="checkbox" name="terms-checkbox" class="checkbox-input"/>
         <label for="terms-checkbox" class="terms-text checkbox-label">
          Погоджуюся з розсилкою та приймаю
          <a href="#" class="terms-link">Умови договору</a>
         </label>
-      </div>
+      </div> -->
+
+      <label for="checkbox-term" class="label-checkbox terms-section">
+        <input id="checkbox-term" type="checkbox" name="terms-checkbox" class="input-checkbox" value="false" checked="">
+        <span class="terms-section">
+            <p class="terms-text">Погоджуюся з розсилкою та приймаю</p>
+            <a href="#" class="terms-link">Умови договору</a>
+        </span>
+      </label>
 
        <button type="button" class="button-send"><div>Відправити</div></button>
       </form>
