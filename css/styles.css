@@ -202,7 +202,6 @@ ul {
 .contact:hover, .contact:focus{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
 }
 
 .item-contact {
@@ -256,11 +255,6 @@ footer{
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    cursor: pointer;
-
 }
 
 .list.address {
@@ -606,7 +600,7 @@ margin-bottom: 10px;
     position: relative;
 }
 
-.photos::after{
+.photos-box{
     content: "";
     color: var(--second-text-color);
     font-style: normal;
@@ -636,17 +630,8 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     align-items: center;
     color: var(--second-text-color);
-    margin-bottom: 27px;
-    margin-right: 107px;
-    margin-left: 107px;
-    margin-top: 251px;
-    z-index: 1;
+    margin: 0;
 }
-.text-photo.third{
-    margin-right: 90px;
-    margin-left: 90px;
-}
-
 
 ul.list{
     margin-top: 0px;
@@ -744,7 +729,7 @@ width: 44px;
 height: 44px;
 border-radius: 50%;
 
-transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-img-icon:hover,
@@ -929,6 +914,7 @@ div.portfolio-card {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid var(--card-border);
+    border-top: none;
     z-index: 2;
 }
 
@@ -988,7 +974,7 @@ a .portfolio-text{
     padding-left: 24px;
     padding-right: 24px;
 }
-.portfolio-link:hover .portfolio-cards-description{
+.decoration:hover .portfolio-cards-description,.decoration:focus .portfolio-cards-description{
     transform: translateY(0);
     border-radius: 1px;
     visibility: visible;
