@@ -405,11 +405,9 @@
 
                     <form>
                         <div class="footer-position-form">
-                        <div class="form-control-footer">
-                        <label for="label-name" class="form-label-footer"></label>
-                            <input id="label-name" type="text" class="form-input-footer">
-                            <span class="form-text-footer">E-mail</span>
-                        </div>
+                        <label for="label-name" class="form-label-footer">
+                            <input type="email" id="label-name" name="label-name-footer" placeholder="Email" class="form-input-footer"/>
+                        </label>
                     </form>
 
                            <button type="button" class="button-send-footer"><div>
@@ -419,8 +417,6 @@
                             </svg>
                         </button>
                     </div>
-                    </div>
-
                 </li>
                 </ul>
      </div>
@@ -441,7 +437,7 @@
       <form name="contact-form">
         <label for="label-name" class="form-label">Ім'я</label>
         <div class="form-control">
-            <input id="label-name" type="text" class="form-input">
+            <input id="label-name" name="label-name" type="text" class="form-input">
          <svg widht="18" height="18" class="form-icon">
             <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
          </svg>
@@ -449,7 +445,7 @@
 
         <label for="label-number" class="form-label">Телефон</label>
         <div class="form-control">
-            <input id="label-number" type="text" class="form-input">
+            <input id="label-number" name="label-number" type="text" class="form-input">
          <svg widht="18" height="18" class="form-icon">
             <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
          </svg>
@@ -457,7 +453,7 @@
 
         <label for="label-email" class="form-label">Пошта</label>
         <div class="form-control">
-            <input id="label-email" type="text" class="form-input">
+            <input id="label-email" name="label-email" type="text" class="form-input">
          <svg widht="18" height="18" class="form-icon">
             <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
          </svg>
@@ -470,25 +466,17 @@
        name="person-comment"
        placeholder="Введіть текст" 
        ></textarea>
+       
 
-<!--checkbox for modal window-->
-      <!-- <div class="terms-section">
-        <input id="terms-checkox" type="checkbox" name="terms-checkbox" class="checkbox-input"/>
-        <label for="terms-checkbox" class="terms-text checkbox-label">
-         Погоджуюся з розсилкою та приймаю
-         <a href="#" class="terms-link">Умови договору</a>
-        </label>
-      </div> -->
-
-      <label for="checkbox-term" class="label-checkbox terms-section">
-        <input id="checkbox-term" type="checkbox" name="terms-checkbox" class="input-checkbox" value="false" checked="">
-        <span class="terms-section">
-            <p class="terms-text">Погоджуюся з розсилкою та приймаю</p>
+        <input id="terms-checkbox" type="checkbox" name="terms-checkbox" class="input-checkbox" value="false" checked="">
+        <label for="terms-checkbox" class="label-checkbox terms-section">
+        <div class="terms-section">
+            <p class="terms-text">Погоджуюся з розсилкою та приймаю </p>
             <a href="#" class="terms-link">Умови договору</a>
-        </span>
-      </label>
+        </div>
+        </label>
 
-       <button type="button" class="button-send"><div>Відправити</div></button>
+       <button type="submit" class="button-send"><div>Відправити</div></button>
       </form>
       </div>
     </div>
